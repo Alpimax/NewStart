@@ -1,4 +1,4 @@
-package Day38_AccessModifiers;
+package Day38_AccessModifiers.Rectangle;
 
 public class Rectangle {
     private double length;

@@ -1,4 +1,4 @@
-package Day38_AccessModifiers;
+package Day38_AccessModifiers.Traffic;
 
 public class Driving {
     public static void main(String[] args) {

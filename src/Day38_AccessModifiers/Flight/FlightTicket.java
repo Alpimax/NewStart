@@ -1,4 +1,4 @@
-package Day38_AccessModifiers;
+package Day38_AccessModifiers.Flight;
 
 public class FlightTicket {
     //   declare these instance variables:
