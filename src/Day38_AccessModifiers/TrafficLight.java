@@ -2,6 +2,10 @@ package Day38_AccessModifiers;
 
 public class TrafficLight {
 
+    public TrafficLight(String color) {
+        setColor(color);
+    }
+
     private  String color;
 
     public String getColor() {
