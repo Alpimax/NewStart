@@ -1,4 +1,4 @@
-package Day39_Inheritance;
+package Day39_Inheritance.Books;
 
 public class Book {
 
