@@ -13,7 +13,7 @@ public class TrafficLight {
     }
 
     public void setColor(String color) {
-        if(color.equals("Red")|| color.equals("Yellow")||color.equals("Green")) {
+        if(color.equals("red")|| color.equals("yellow")||color.equals("green")) {
             this.color = color;
         }
     }
