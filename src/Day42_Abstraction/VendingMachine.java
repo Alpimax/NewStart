@@ -20,8 +20,24 @@ public class VendingMachine {
         } else if(selection == 3){
             item = "Candy";
         }
-
         return item;
     }
+
+    public static String selectValid(int selection) throws InvalidSelectionException{
+
+        String item = "";
+
+        if(selection == 1){
+            item = "Chips";
+        } else if(selection == 2){
+            item = "Gum";
+        } else if(selection == 3){
+            item = "Candy";
+        } else {
+            throw new InvalidSelectionException(); // checked exception - must be handled - but also I created this so I dont want to handle myself
+        }
+        return item;
+    }
+
 
 }
