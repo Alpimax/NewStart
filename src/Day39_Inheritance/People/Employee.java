@@ -1,0 +1,8 @@
+package Day39_Inheritance.People;
+
+public class Employee extends Person {
+
+    public Employee(String name, int age){
+        super(name,age);
+    }
+}
