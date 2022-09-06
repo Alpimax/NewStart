@@ -22,13 +22,13 @@ public class WorkPlace {
                 new Tester("Bato", 30, "SDET", 150000),
                 new Tester("Jonathan", 40, "Senior SDET", 200000),
                 new Tester("Isa", 30, "SDET", 180000),
-                new Tester("Nasiba", 25,  "SDET", 120_000),
+                new Tester("Nasiba", 25, "SDET", 120_000),
                 new Tester("Nargiz", 27, "Qa engineer ", 120000)
         ));
 
         System.out.println();
 
-        for(Tester each : testers){
+        for (Tester each : testers) {
             System.out.println(each);
 
             each.sleep(8);

@@ -1,10 +1,11 @@
 package Day42_Abstraction.employee;
+
 public abstract class Person {
 
     String name;
     int age;
 
-    public Person(String name, int age){
+    public Person(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -12,7 +13,7 @@ public abstract class Person {
     public abstract void sleep(int hours);
 
     @Override
-    public String toString(){
+    public String toString() {
         return name + " " + age;
     }
 
