@@ -1,5 +1,7 @@
 package CodingBat;
 
+
+
 public class CodingBat {
     private int age;
     private String color;
