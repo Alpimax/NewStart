@@ -43,6 +43,8 @@ public class CodingBat {
         setCins(cins);
     }
 
+
+
     public String toString() {
         return "Cins: " + cins + "\nAge: " + age + "\nColor: " + color;
     }
