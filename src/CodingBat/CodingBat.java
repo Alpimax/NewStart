@@ -1,34 +1,50 @@
 package CodingBat;
 
+
 public class CodingBat {
-    public static void main(String[] args) {
+    private int age;
+    private String color;
+    private String cins;
 
 
+    public int getAge() {
+        return age;
     }
 
-    public static String doubleChar(String str) {
-        String newStr = "";
-        for (int i = 0; i < str.length(); i++) {
-            newStr += "" + str.charAt(i) + str.charAt(i);
-
-
-        }
-        return newStr;
-
+    public void setAge(int age) {
+        if (age < 0) {
+            throw new IllegalArgumentException();
+        } else
+            this.age = age;
     }
 
-    public static String doubleIt(String str) {
-        String newStr = "";
-        for (int i = 0; i < str.length(); i++) {
-            newStr += "" + str.charAt(i) + str.charAt(i);
+    public String getColor() {
+        return color;
+    }
 
-
+    public void setColor(String color) {
+        if (color.equals("yellow")) {
+            this.color = color;
         }
-        return newStr;
+    }
 
+    public String getCins() {
+        return cins;
+    }
+
+    public void setCins(String cins) {
+        this.cins = cins;
+    }
+
+
+    public CodingBat(int age, String color, String cins) {
+        setAge(age);
+        setColor(color);
+        setCins(cins);
+    }
+
+
+    public String toString() {
+        return "Cins: " + cins + "\nAge: " + age + "\nColor: " + color;
     }
 }
-
-
-
-
