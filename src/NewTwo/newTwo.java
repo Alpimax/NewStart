@@ -12,12 +12,12 @@ public class newTwo {
         String website = "it comes from Github";
         System.out.println(website);
         int numberOfLength = website.length();
-        System.out.println (numberOfLength);
+        System.out.println(numberOfLength);
         camelCase("alper");
     }
 
 
-    public static void camelCase (String name){
+    public static void camelCase(String name) {
         System.out.println(name.toUpperCase().charAt(0) + name.toLowerCase().substring(1));
 
     }
