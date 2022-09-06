@@ -2,10 +2,11 @@ package CodingBat;
 
 
 
-public class CodingBat {
+public class     CodingBat {
     private int age;
     private String color;
     private String cins;
+
 
     public int getAge() {
         return age;
