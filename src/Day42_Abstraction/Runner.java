@@ -6,6 +6,5 @@ public class Runner {
         System.out.println(VendingMachine.select(2)); // this method has an unchecked exception - normally these exceptions are not handled
 
 
-
     }
 }
