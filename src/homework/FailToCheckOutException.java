@@ -1,7 +1,7 @@
 package homework;
 
 public class FailToCheckOutException {
-    int number ;
+    int number;
 
 
     public FailToCheckOutException(int number) {
