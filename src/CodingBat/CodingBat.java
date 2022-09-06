@@ -1,8 +1,7 @@
 package CodingBat;
 
 
-
-public class     CodingBat {
+public class CodingBat {
     private int age;
     private String color;
     private String cins;
@@ -15,8 +14,8 @@ public class     CodingBat {
     public void setAge(int age) {
         if (age < 0) {
             throw new IllegalArgumentException();
-        }else
-        this.age = age;
+        } else
+            this.age = age;
     }
 
     public String getColor() {
@@ -24,7 +23,7 @@ public class     CodingBat {
     }
 
     public void setColor(String color) {
-        if(color.equals("yellow")) {
+        if (color.equals("yellow")) {
             this.color = color;
         }
     }
@@ -38,14 +37,11 @@ public class     CodingBat {
     }
 
 
-
-
     public CodingBat(int age, String color, String cins) {
         setAge(age);
         setColor(color);
         setCins(cins);
     }
-
 
 
     public String toString() {
