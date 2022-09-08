@@ -2,49 +2,27 @@ package CodingBat;
 
 
 public class CodingBat {
-    private int age;
-    private String color;
-    private String cins;
+    public static void main(String[] args) {
 
 
-    public int getAge() {
-        return age;
-    }
+        int number = 6232416;
+        int count = 0;
+        int total = 0;
+        int value;
+        int temp = number;
 
-    public void setAge(int age) {
-        if (age < 0) {
-            throw new IllegalArgumentException();
-        } else
-            this.age = age;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        if (color.equals("yellow")) {
-            this.color = color;
+        while (temp > 0) {
+            temp /= 10;
+            count++;
         }
-    }
-
-    public String getCins() {
-        return cins;
-    }
-
-    public void setCins(String cins) {
-        this.cins = cins;
-    }
-
-
-    public CodingBat(int age, String color, String cins) {
-        setAge(age);
-        setColor(color);
-        setCins(cins);
-    }
-
-
-    public String toString() {
-        return "Cins: " + cins + "\nAge: " + age + "\nColor: " + color;
+        System.out.println(count);
+        System.out.println(temp);
+        temp = number;
+        while (temp > 0) {
+            value = temp % 10;
+            total += Math.pow(value, count);
+            temp /= 10;
+        }
+        System.out.println(number == total ? "this is Armstrong. " : "this is not Armstrong.");
     }
 }
