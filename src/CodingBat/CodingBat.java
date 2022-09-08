@@ -25,9 +25,4 @@ public class CodingBat {
         }
         System.out.println(number == total ? "this is Armstrong. " : "this is not Armstrong.");
     }
-
-    {
-
-    }
-
 }
