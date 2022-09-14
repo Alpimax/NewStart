@@ -72,13 +72,15 @@ public class Facebook extends SocialMedia {
     void post(Object media) {
 
     }
+
     @Override
     void notifications() {
-      int hours = LocalTime.now().getHour();
-      if(hours >=8 && hours <=17)
-        System.out.println("Notification");
-      else
-          System.out.println("Sleep mode");
+        int hours = LocalTime.now().getHour();
+        if (hours >= 8 && hours <= 17)
+            System.out.println("Notification");
+        else
+            System.out.println("Sleep mode");
     }
 
 }
+
