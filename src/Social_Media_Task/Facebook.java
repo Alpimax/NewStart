@@ -86,8 +86,7 @@ public class Facebook extends SocialMedia {
     }
 
     public  boolean sendFriendRequest(Facebook obj){
-        String snt ;
-        snt.en
+
         return false;
     }
 
