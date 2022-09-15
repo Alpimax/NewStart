@@ -15,10 +15,12 @@ public class Facebook extends SocialMedia {
         platform = "Facebook";
     }
 
+
+
     public Facebook(String username, String password) {
         super(username, password);
         this.personalUrl = "https://www.facebook.com/" + username;
-        ArrayList<String> arrayOfPost = new ArrayList<>();
+        posts = new ArrayList<>();
 
     }
 
@@ -71,7 +73,7 @@ public class Facebook extends SocialMedia {
 
     @Override
     void post(Object media) {
-
+        posts.add(new Post(""));
     }
 
     @Override
