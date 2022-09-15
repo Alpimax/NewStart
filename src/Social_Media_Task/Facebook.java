@@ -85,5 +85,15 @@ public class Facebook extends SocialMedia {
             System.out.println("Sleep mode");
     }
 
+
+    @Override
+    public String toString() {
+        return super.toString()+
+                "Facebook{" +
+                "age=" + age +
+                ", numberOfFriend=" + numberOfFriend +
+                ", posts=" + posts +
+                '}';
+    }
 }
 
