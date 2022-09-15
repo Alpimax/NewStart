@@ -85,6 +85,7 @@ public class Facebook extends SocialMedia {
             System.out.println("Sleep mode");
     }
 
+
     public  boolean sendFriendRequest(Facebook obj){
 
         return false;
