@@ -18,7 +18,7 @@ public class Facebook extends SocialMedia {
     public Facebook(String username, String password) {
         super(username, password);
         this.personalUrl = "https://www.facebook.com/" + username;
-        setPosts(new ArrayList<Post>());
+        ArrayList<String> arrayOfPost = new ArrayList<>();
 
     }
 
@@ -30,6 +30,7 @@ public class Facebook extends SocialMedia {
         super(username, password, fullName);
         setAge(age);
         setNumberOfFriend(numberOfFriend);
+
     }
 
     public void setAge(int age) {

@@ -1,5 +1,6 @@
 package Social_Media_Task;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.stream.Collector;
@@ -43,7 +44,6 @@ public abstract class SocialMedia {
     abstract void directMessaging(String username, String message);
 
     abstract void post(Object media);
-
     abstract void notifications();
 
 
