@@ -73,8 +73,8 @@ public class Facebook extends SocialMedia {
     }
 
     @Override
-    void post(Post obj) {
-        posts.add( new Post(""));
+    void post(Object body) {
+        posts.add( new Post(personalUrl));
     }
 
     @Override
