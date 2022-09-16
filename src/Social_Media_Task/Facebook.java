@@ -6,7 +6,7 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Facebook extends SocialMedia {
+public class Facebook extends SocialMedia implements  HasGroups {
 
     private int age;
     private int numberOfFriend;
@@ -85,6 +85,17 @@ public class Facebook extends SocialMedia {
             System.out.println("Sleep mode");
     }
 
+    @Override
+    public void joinGroup(String group) {
+        System.out.println( username + " has joined "+ group);
+        numberOfFriend++;
+    }
+
+    @Override
+    public void leaveGroup(String group) {
+        System.out.println( username + " has left "+ group);
+        numberOfFriend--;
+    }
 
     public boolean sendFriendRequest(Facebook obj, int numberOfFriend) {
         boolean check;
