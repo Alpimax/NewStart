@@ -87,7 +87,11 @@ public class Facebook extends SocialMedia {
     }
 
 
-    public  boolean sendFriendRequest(Facebook obj){
+    public  boolean sendFriendRequest(Facebook obj,int numberOfFriend){
+        boolean check = false;
+       if( numberOfFriend > 5000){
+           System.out.println("You have reached the limit of friends.");
+       }
 
         return false;
     }
