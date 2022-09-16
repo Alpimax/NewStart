@@ -3,7 +3,7 @@ package Social_Media_Task;
 import java.time.LocalTime;
 import java.util.ArrayList;
 
-public class Instagram extends SocialMedia {
+public class Instagram extends SocialMedia implements HasPictures {
     private int numberOfFollowers;
     private int numberOfFollowings;
     private ArrayList<Picture> pictures;
@@ -32,6 +32,21 @@ public class Instagram extends SocialMedia {
             System.out.println("Notification");
         else
             System.out.println("Sleep mode");
+    }
+
+    @Override
+    public void likePicture() {
+
+    }
+
+    @Override
+    public void unLikePicture() {
+
+    }
+
+    @Override
+    public void sharePicture() {
+
     }
 
     public int getNumberOfFollowers() {
