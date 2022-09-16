@@ -4,6 +4,7 @@ import org.w3c.dom.ls.LSOutput;
 
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Facebook extends SocialMedia {
 
@@ -72,8 +73,8 @@ public class Facebook extends SocialMedia {
     }
 
     @Override
-    void post(Object media) {
-        posts.add(new Post());
+    void post(Post obj) {
+        posts.add( new Post(""));
     }
 
     @Override

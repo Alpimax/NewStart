@@ -43,7 +43,7 @@ public abstract class SocialMedia {
 
     abstract void directMessaging(String username, String message);
 
-    abstract void post(Object media);
+    abstract void post(Post obj);
     abstract void notifications();
 
 
