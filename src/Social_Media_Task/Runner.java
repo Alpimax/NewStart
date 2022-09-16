@@ -1,11 +1,13 @@
 package Social_Media_Task;
 
+import java.util.Arrays;
+
 public class Runner {
     public static void main(String[] args) {
         Facebook obj = new Facebook("Megan Tice","Megan");
         obj.notifications();
         System.out.println(obj);
-        obj.post(" Alpi king of this world!!");
+
         System.out.println(obj);
     }
 }

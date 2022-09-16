@@ -17,7 +17,6 @@ public class Facebook extends SocialMedia {
     }
 
 
-
     public Facebook(String username, String password) {
         super(username, password);
         this.personalUrl = "https://www.facebook.com/" + username;
@@ -74,7 +73,7 @@ public class Facebook extends SocialMedia {
 
     @Override
     void post(Object body) {
-        posts.add( new Post(personalUrl));
+        posts.add(new Post(personalUrl));
     }
 
     @Override
@@ -87,20 +86,20 @@ public class Facebook extends SocialMedia {
     }
 
 
-    public  boolean sendFriendRequest(Facebook obj,int numberOfFriend){
+    public boolean sendFriendRequest(Facebook obj, int numberOfFriend) {
         boolean check = false;
-       if( numberOfFriend > 5000){
-           System.out.println("You have reached the limit of friends.");
-       }
+        if (numberOfFriend > 5000) {
+            check = true;
+            System.out.println("You have reached the limit of friends.");
+        }
 
-        return false;
+        return check;
     }
-
 
 
     @Override
     public String toString() {
-        return super.toString()+
+        return super.toString() +
                 "Facebook{" +
                 "age=" + age +
                 ", numberOfFriend=" + numberOfFriend +
