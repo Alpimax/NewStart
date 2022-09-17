@@ -6,7 +6,7 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Facebook extends SocialMedia implements  HasGroups {
+public class Facebook extends SocialMedia implements HasGroups {
 
     private int age;
     private int numberOfFriend;
@@ -87,13 +87,13 @@ public class Facebook extends SocialMedia implements  HasGroups {
 
     @Override
     public void joinGroup(String group) {
-        System.out.println( username + " has joined "+ group);
+        System.out.println(username + " has joined " + group);
         numberOfFriend++;
     }
 
     @Override
     public void leaveGroup(String group) {
-        System.out.println( username + " has left "+ group);
+        System.out.println(username + " has left " + group);
         numberOfFriend--;
     }
 
