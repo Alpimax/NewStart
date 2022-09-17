@@ -1,8 +1,8 @@
 package Social_Media_Task;
 
 public class Picture {
-    byte [] image;
-    final String extension ;
+    byte[] image;
+    final String extension;
     private String caption;
 
     public String getCaption() {
@@ -12,14 +12,20 @@ public class Picture {
     public void setCaption(String caption) {
         this.caption = caption;
     }
-    final void setImage(){
+
+    final void setImage() {
 
     }
-    final void setExtension(){
+
+    final void setExtension() {
 
     }
-    public void getImage(){}
-    public void getExtension(){}
+
+    public void getImage() {
+    }
+
+    public void getExtension() {
+    }
 
     public Picture(byte[] image, String extension, String caption) {
         this.image = image;
