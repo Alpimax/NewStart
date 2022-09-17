@@ -10,7 +10,7 @@ public abstract class SocialMedia {
 
     String personalUrl;
     int accountLength;
-    static String platform ;
+    static String platform;
     String username;
     String password;
     String fullName;
@@ -45,9 +45,8 @@ public abstract class SocialMedia {
 
 
     abstract void post(Object body);
+
     abstract void notifications();
-
-
 
 
     @Override
