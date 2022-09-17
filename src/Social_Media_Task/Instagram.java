@@ -72,4 +72,18 @@ public class Instagram extends SocialMedia implements HasPictures {
     public void setPictures(ArrayList<Picture> pictures) {
         this.pictures = pictures;
     }
+
+    @Override
+    public String toString() {
+        return "Instagram{" +
+                "numberOfFollowers=" + numberOfFollowers +
+                ", numberOfFollowings=" + numberOfFollowings +
+                ", pictures=" + pictures +
+                ", personalUrl='" + personalUrl + '\'' +
+                ", accountLength=" + accountLength +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", fullName='" + fullName + '\'' +
+                '}';
+    }
 }
