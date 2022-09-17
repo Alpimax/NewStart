@@ -9,12 +9,12 @@ public class Post {
 
     public Post(String body) {
         this.body = body;
-        this.dateTime  = LocalDateTime.now().format(DateTimeFormatter.ofPattern("MMM dd, yyyy | hh:mm a"));
+        this.dateTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("MMM dd, yyyy | hh:mm a"));
     }
 
 
     public void setDateTime(String dateTime) {
-        this.dateTime=dateTime;
+        this.dateTime = dateTime;
     }
 
     public void setBody(String body) {
