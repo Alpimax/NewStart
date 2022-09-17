@@ -43,8 +43,11 @@ public abstract class SocialMedia {
 
     abstract void directMessaging(String username, String message);
 
+
     abstract void post(Object body);
     abstract void notifications();
+
+
 
 
     @Override
