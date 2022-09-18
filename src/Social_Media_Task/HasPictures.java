@@ -9,6 +9,8 @@ public interface HasPictures {
 
     void unLikePicture();
 
+
+
     void sharePicture();
 
 
