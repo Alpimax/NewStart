@@ -26,6 +26,8 @@ public abstract class SocialMedia {
         }
     }
 
+
+
     public SocialMedia(String username, String password, String fullName) {
         this(username, password);
         boolean isChar = false;
