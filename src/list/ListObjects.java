@@ -1,9 +1,6 @@
 package list;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Vector;
+import java.util.*;
 
 public class ListObjects {
     public static void main(String[] args) {
@@ -32,5 +29,14 @@ public class ListObjects {
         list3.add('c');
         System.out.println(list3);
 
+
+        Set<String> set1 = new HashSet<>();
+        set1.add(null);
+        set1.add("hello world");
+        set1.add("5.0");
+        set1.add("#zebra");
+        set1.add("hello world");
+        set1.add("Java");
+        System.out.println(set1);
     }
 }
