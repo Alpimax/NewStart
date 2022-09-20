@@ -56,5 +56,48 @@ public class ListObjects {
         set3.add("Java");
         System.out.println(set3);
 
+
+        Set<Integer> set = new HashSet<>();
+        set.add(4);
+        set.add(5);
+        set.add(12);
+        set.add(34);
+        set.add(-1);
+        set.add(9);
+        System.out.println(set);
+
+        //set.get(); there is no get method, how do you access the elements?
+
+        for (int each : set) {
+            if (each > 10) {
+                System.out.println(each);
+            }
+        }
+
+        Set<String> handles = new HashSet<>();
+        handles.add("daad2141124");
+        handles.add("dsauehui223");
+
+        for (String each : handles) {
+            if (!each.equalsIgnoreCase("daad2141124")) {
+                // switch to the other handle
+            }
+        }
+
+        Set<String> set6 = new HashSet<>();
+        set6.add("hello");
+        set6.add("bye");
+        set6.add("java");
+        set6.add("world");
+        System.out.println(set3);
+
+        List<String> list = new ArrayList<>(set6);
+        System.out.println(list);
+        System.out.println(list.get(0));
+
+        String s = "";
+
+
     }
 }
+
